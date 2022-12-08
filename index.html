@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Třídička</title>
+  <script type="text/javascript" src="script.js" defer></script>
+
+</head>
+<body>
+
+  <fieldset>
+    <form id="frm1">
+      <h3>Přidej libovolné číslo <input type="number" id="answ" name="answer" min="-100" max="100"><br><br>
+      <input type="button" onclick="addToArray()" value="Přidej do listu!">
+      <br>
+    </form>
+  </fieldset>
+  <h3>ČÍSLA V LISTU:</h3>
+  <p id="cisla"></p>
+  <button id="btn-setrid" class="setrid" onclick="setridit()">Seřaď!</button>
+  <h3 id="heading" style="display: none;">SEŘAZENÁ ČÍSLA:</h3>
+  <p id="serazene"></p>
+
+  <br>
+  <br>
+  <p id="autor">Miloš Tesař C3b</p>
+
+</body>
+</html>
