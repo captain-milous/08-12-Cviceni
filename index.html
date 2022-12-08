@@ -11,18 +11,20 @@
 </head>
 <body>
 
-  <fieldset>
+  <fieldset id="field">
     <form id="frm1">
-      <h3>Přidej libovolné číslo <input type="number" id="answ" name="answer" min="-100" max="100"><br><br>
-      <input type="button" onclick="addToArray()" value="Přidej do listu!">
+      <h3>Vlastní číslo: <input type="number" id="answ" name="answer" value="0" min="0" max="100"><br><br>
+      <input type="button" onclick="addToArray()" value="Přidej do listu vlastní číslo!">
+      <input type="button" onclick="addRandom()" value="Přidej do listu random číslo!">
       <br>
     </form>
   </fieldset>
   <h3>ČÍSLA V LISTU:</h3>
   <p id="cisla"></p>
-  <button id="btn-setrid" class="setrid" onclick="setridit()">Seřaď!</button>
+  <button id="btn-setrid" onclick="setridit()">Seřaď!</button>
   <h3 id="heading" style="display: none;">SEŘAZENÁ ČÍSLA:</h3>
   <p id="serazene"></p>
+  <button id="btn-reset" style="display: none;" onclick="reset()">Smaž můj list!</button>
 
   <br>
   <br>
